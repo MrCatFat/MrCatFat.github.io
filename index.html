@@ -1,15 +1,23 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You are moving to .... </title>
 </head>
+<body>
+    <button onclick="redirectToURL()">Go to Example.com</button>
 
-<body style="height: 1000px;">
-    <div id="large-header" class="large-header">
-        <canvas id="demo-canvas"></canvas>
-        <h1 class="main-title">Connect <span class="thin">Three</span></h1>
-    </div>
+    <script>
+        function redirectToURL() {
+            var SubUrl =  '/demo1';
+            // You can choose any of the following methods to redirect
+            window.location.href =SubUrl;
+            // or
+            // window.location.assign(SubUrl);
+            // or
+            // window.location.replace(SubUrl);
+        }
+    </script>
 </body>
-
 </html>
